@@ -1,8 +1,9 @@
 import * as React from "react";
 import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
-
+import { Switch, FormControlLabel, FormControl } from "@mui/material";
 import { GridItem } from "../../components";
+import { uiStore } from "../../store/stores";
 
 interface Props {
   handleToggle: () => void;
@@ -11,7 +12,9 @@ interface Props {
 
 function HeaderComponent(props: Props) {
   const { handleToggle, color } = props;
-
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    uiStore.setState({ isBusy: event.target.checked });
+  };
   return (
     <AppBar color={color}>
       <Toolbar>
@@ -24,7 +27,19 @@ function HeaderComponent(props: Props) {
           </Typography>
         </GridItem>
         <GridItem>
-          {/* <Typography variant="overline">{`${me.userAccessType} ${me.email}`}</Typography> */}
+          <FormControl>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={uiStore.useStore((s) => s.isBusy)}
+                  name="status"
+                  size="small"
+                  onChange={onChange}
+                />
+              }
+              label="Status"
+            />
+          </FormControl>
         </GridItem>
       </Toolbar>
     </AppBar>

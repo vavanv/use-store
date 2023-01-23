@@ -1,12 +1,8 @@
 import { createStore } from "./create-store";
 
-export const locationStore = createStore({
-  name: "",
-  number: 0,
-  location: {
-    name: "",
-    count: 0,
-  },
+export const userStore = createStore({
+  firstName: "",
+  lastName: "",
 });
 
 export const uiStore = createStore({

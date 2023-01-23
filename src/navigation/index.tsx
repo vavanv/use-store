@@ -25,7 +25,7 @@ const NavBarComponent = (props: Props) => {
       <Drawer
         PaperProps={{
           sx: {
-            backgroundColor: "#19212b",
+            backgroundColor: "white",
           },
         }}
         open={sideMenuOpen}

@@ -12,7 +12,7 @@ interface Props extends WithStyles<typeof styles> {
 const MainContainerComponent = (props: Props) => {
   return (
     <>
-      <NavBar headerColor={"primary"} />
+      <NavBar headerColor={"secondary"} />
       <div className={props.classes.container}>
         <Container maxWidth={false} sx={{ maxWidth: "90%" }}>
           {props.children}

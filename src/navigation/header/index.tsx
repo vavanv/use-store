@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { Switch, FormControlLabel, FormControl } from "@mui/material";
 import { GridItem } from "../../components";
-import { uiStore } from "../../store/stores";
+import { uiStore, userStore } from "../../store/stores";
 
 interface Props {
   handleToggle: () => void;
@@ -41,6 +41,8 @@ function HeaderComponent(props: Props) {
             />
           </FormControl>
         </GridItem>
+        <GridItem>{userStore.useStore((s) => s.firstName)}</GridItem>
+        <GridItem>{userStore.useStore((s) => s.lastName)}</GridItem>
       </Toolbar>
     </AppBar>
   );

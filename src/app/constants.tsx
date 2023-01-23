@@ -1,3 +1,3 @@
 export const MAIN_PAGE = "/";
-export const INBOX_PAGE = "/inbox-page";
-export const DRAFT_PAGE = "/drafts-page";
+export const USER_PAGE = "/user-page";
+export const SUMMARY_PAGE = "/summary-page";

@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "../pages/home-page";
-import { InboxPage } from "../pages/inbox-page";
-import { DraftsPage } from "../pages/drafts-page";
-import { MAIN_PAGE, INBOX_PAGE, DRAFT_PAGE } from "./constants";
+import { UserPage } from "../pages/user-page";
+import { SummaryPage } from "../pages/summary-page";
+import { MAIN_PAGE, USER_PAGE, SUMMARY_PAGE } from "./constants";
 
 export const AppRoutes = () => (
   <>
     <Routes>
       <Route path={MAIN_PAGE} element={<HomePage />} />
-      <Route path={INBOX_PAGE} element={<InboxPage />} />
-      <Route path={DRAFT_PAGE} element={<DraftsPage />} />
+      <Route path={USER_PAGE} element={<UserPage />} />
+      <Route path={SUMMARY_PAGE} element={<SummaryPage />} />
     </Routes>
   </>
 );

@@ -7,7 +7,7 @@ import HomeIcon from "@mui/icons-material/Home";
 
 import { Link } from "react-router-dom";
 
-import { MAIN_PAGE, INBOX_PAGE, DRAFT_PAGE } from "../../app/constants";
+import { MAIN_PAGE, USER_PAGE, SUMMARY_PAGE } from "../../app/constants";
 
 import { styles } from "./styles";
 
@@ -43,15 +43,15 @@ function NavBarMainMenuItemsComponent(props: Props) {
           visible: true,
         },
         {
-          id: "Inbox",
+          id: "User",
           icon: <InboxIcon />,
-          route: INBOX_PAGE,
+          route: USER_PAGE,
           visible: true,
         },
         {
-          id: "Draft",
+          id: "Summary",
           icon: <MailIcon />,
-          route: DRAFT_PAGE,
+          route: SUMMARY_PAGE,
           visible: true,
         },
       ],

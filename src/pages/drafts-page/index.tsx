@@ -1,7 +1,7 @@
 import { MainContainer } from "../../main-container";
 
 const DraftsPageComponent = () => {
-  return <>DraftPAge</>;
+  return <>DraftPage</>;
 };
 
 export const DraftsPage = () => {

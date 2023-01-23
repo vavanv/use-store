@@ -20,7 +20,7 @@ function HeaderComponent(props: Props) {
         </IconButton>
         <GridItem>
           <Typography variant="h6" color="inherit">
-            Games Manager v2
+            Test v2
           </Typography>
         </GridItem>
         <GridItem>

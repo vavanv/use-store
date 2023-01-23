@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# example how to use hook useSyncExternalStore
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

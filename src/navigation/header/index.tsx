@@ -43,6 +43,7 @@ function HeaderComponent(props: Props) {
         </GridItem>
         <GridItem>{userStore.useStore((s) => s.firstName)}</GridItem>
         <GridItem>{userStore.useStore((s) => s.lastName)}</GridItem>
+        <GridItem>{userStore.useStore((s) => s.fullName)}</GridItem>
       </Toolbar>
     </AppBar>
   );
